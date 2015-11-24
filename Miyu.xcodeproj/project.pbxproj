@@ -7,20 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		92435CCB1C0486E100514A0F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92435CCA1C0486E100514A0F /* Launch Screen.storyboard */; };
 		92A6CEBE1BE88E5D0022BF31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A6CEBD1BE88E5D0022BF31 /* AppDelegate.swift */; };
 		92A6CEC01BE88E5D0022BF31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A6CEBF1BE88E5D0022BF31 /* ViewController.swift */; };
 		92A6CEC31BE88E5D0022BF31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A6CEC11BE88E5D0022BF31 /* Main.storyboard */; };
 		92A6CEC51BE88E5D0022BF31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A6CEC41BE88E5D0022BF31 /* Assets.xcassets */; };
-		92A6CEC81BE88E5D0022BF31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A6CEC61BE88E5D0022BF31 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		92435CCA1C0486E100514A0F /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		92A6CEBA1BE88E5D0022BF31 /* Miyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A6CEBD1BE88E5D0022BF31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92A6CEBF1BE88E5D0022BF31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		92A6CEC21BE88E5D0022BF31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92A6CEC41BE88E5D0022BF31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		92A6CEC71BE88E5D0022BF31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92A6CEC91BE88E5D0022BF31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,8 +57,8 @@
 				92A6CEBD1BE88E5D0022BF31 /* AppDelegate.swift */,
 				92A6CEBF1BE88E5D0022BF31 /* ViewController.swift */,
 				92A6CEC11BE88E5D0022BF31 /* Main.storyboard */,
+				92435CCA1C0486E100514A0F /* Launch Screen.storyboard */,
 				92A6CEC41BE88E5D0022BF31 /* Assets.xcassets */,
-				92A6CEC61BE88E5D0022BF31 /* LaunchScreen.storyboard */,
 				92A6CEC91BE88E5D0022BF31 /* Info.plist */,
 			);
 			path = Miyu;
@@ -122,7 +122,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92A6CEC81BE88E5D0022BF31 /* LaunchScreen.storyboard in Resources */,
+				92435CCB1C0486E100514A0F /* Launch Screen.storyboard in Resources */,
 				92A6CEC51BE88E5D0022BF31 /* Assets.xcassets in Resources */,
 				92A6CEC31BE88E5D0022BF31 /* Main.storyboard in Resources */,
 			);
@@ -149,14 +149,6 @@
 				92A6CEC21BE88E5D0022BF31 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		92A6CEC61BE88E5D0022BF31 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				92A6CEC71BE88E5D0022BF31 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -251,6 +243,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = moe.Cee.Miyu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -262,6 +255,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = moe.Cee.Miyu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -284,6 +278,7 @@
 				92A6CECE1BE88E5D0022BF31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
