@@ -25,7 +25,9 @@ class HomePageViewController: UIPageViewController {
         pages.append(page2)
         
         setViewControllers([page1], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
-        // Do any additional setup after loading the view.
+        
+        UIPageControl.appearance().pageIndicatorTintColor = UIColor.init(red: 243/255.0, green: 243/255.0, blue: 243/255.0, alpha: 1.0)
+        UIPageControl.appearance().currentPageIndicatorTintColor = UIColor.init(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.25)
     }
 
     override func didReceiveMemoryWarning() {

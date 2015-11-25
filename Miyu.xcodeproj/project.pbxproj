@@ -12,11 +12,14 @@
 		92A6CEC01BE88E5D0022BF31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A6CEBF1BE88E5D0022BF31 /* ViewController.swift */; };
 		92A6CEC31BE88E5D0022BF31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A6CEC11BE88E5D0022BF31 /* Main.storyboard */; };
 		92A6CEC51BE88E5D0022BF31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A6CEC41BE88E5D0022BF31 /* Assets.xcassets */; };
-		92C5A1371C0585660079722B /* MusicInfoPageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C5A1361C0585660079722B /* MusicInfoPageContentViewController.swift */; };
-		92C5A1391C0587C80079722B /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C5A1381C0587C80079722B /* HomePageViewController.swift */; };
+		92E024781C0591DC009E2BF4 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E024761C0591DC009E2BF4 /* HomePageViewController.swift */; };
+		92E024791C0591DC009E2BF4 /* MusicInfoPageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E024771C0591DC009E2BF4 /* MusicInfoPageContentViewController.swift */; };
+		AF4CBD1A2B66636B9BAE45EB /* Pods_Miyu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0969D93F6324282F63913A8D /* Pods_Miyu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0969D93F6324282F63913A8D /* Pods_Miyu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Miyu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57F3028237C2B0EFE43B73DA /* Pods-Miyu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miyu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Miyu/Pods-Miyu.debug.xcconfig"; sourceTree = "<group>"; };
 		92435CCA1C0486E100514A0F /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		92A6CEBA1BE88E5D0022BF31 /* Miyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A6CEBD1BE88E5D0022BF31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -24,8 +27,9 @@
 		92A6CEC21BE88E5D0022BF31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92A6CEC41BE88E5D0022BF31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92A6CEC91BE88E5D0022BF31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92C5A1361C0585660079722B /* MusicInfoPageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicInfoPageContentViewController.swift; sourceTree = "<group>"; };
-		92C5A1381C0587C80079722B /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		92E024761C0591DC009E2BF4 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		92E024771C0591DC009E2BF4 /* MusicInfoPageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicInfoPageContentViewController.swift; sourceTree = "<group>"; };
+		A88C2E3234073A5BE87A2EE7 /* Pods-Miyu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miyu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Miyu/Pods-Miyu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF4CBD1A2B66636B9BAE45EB /* Pods_Miyu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				92A6CEBC1BE88E5D0022BF31 /* Miyu */,
 				92A6CEBB1BE88E5D0022BF31 /* Products */,
+				D91669494A9AE8DC67FD6919 /* Pods */,
+				C39B1FA390A16DB1170DD98D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +67,31 @@
 			children = (
 				92A6CEBD1BE88E5D0022BF31 /* AppDelegate.swift */,
 				92A6CEBF1BE88E5D0022BF31 /* ViewController.swift */,
-				92C5A1361C0585660079722B /* MusicInfoPageContentViewController.swift */,
-				92C5A1381C0587C80079722B /* HomePageViewController.swift */,
+				92E024761C0591DC009E2BF4 /* HomePageViewController.swift */,
+				92E024771C0591DC009E2BF4 /* MusicInfoPageContentViewController.swift */,
 				92A6CEC11BE88E5D0022BF31 /* Main.storyboard */,
 				92435CCA1C0486E100514A0F /* Launch Screen.storyboard */,
 				92A6CEC41BE88E5D0022BF31 /* Assets.xcassets */,
 				92A6CEC91BE88E5D0022BF31 /* Info.plist */,
 			);
 			path = Miyu;
+			sourceTree = "<group>";
+		};
+		C39B1FA390A16DB1170DD98D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0969D93F6324282F63913A8D /* Pods_Miyu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D91669494A9AE8DC67FD6919 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57F3028237C2B0EFE43B73DA /* Pods-Miyu.debug.xcconfig */,
+				A88C2E3234073A5BE87A2EE7 /* Pods-Miyu.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92A6CECC1BE88E5D0022BF31 /* Build configuration list for PBXNativeTarget "Miyu" */;
 			buildPhases = (
+				7C1184709AA74FD0393D3AD8 /* Check Pods Manifest.lock */,
 				92A6CEB61BE88E5D0022BF31 /* Sources */,
 				92A6CEB71BE88E5D0022BF31 /* Frameworks */,
 				92A6CEB81BE88E5D0022BF31 /* Resources */,
+				CDE461C292ABFDEF912F581B /* Embed Pods Frameworks */,
+				D99C82FB7A8691A54B0CB7FC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,15 +164,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7C1184709AA74FD0393D3AD8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CDE461C292ABFDEF912F581B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Miyu/Pods-Miyu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D99C82FB7A8691A54B0CB7FC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Miyu/Pods-Miyu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92A6CEB61BE88E5D0022BF31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92C5A1391C0587C80079722B /* HomePageViewController.swift in Sources */,
 				92A6CEC01BE88E5D0022BF31 /* ViewController.swift in Sources */,
-				92C5A1371C0585660079722B /* MusicInfoPageContentViewController.swift in Sources */,
 				92A6CEBE1BE88E5D0022BF31 /* AppDelegate.swift in Sources */,
+				92E024781C0591DC009E2BF4 /* HomePageViewController.swift in Sources */,
+				92E024791C0591DC009E2BF4 /* MusicInfoPageContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +321,7 @@
 		};
 		92A6CECD1BE88E5D0022BF31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57F3028237C2B0EFE43B73DA /* Pods-Miyu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Miyu/Info.plist;
@@ -258,6 +334,7 @@
 		};
 		92A6CECE1BE88E5D0022BF31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A88C2E3234073A5BE87A2EE7 /* Pods-Miyu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Miyu/Info.plist;
