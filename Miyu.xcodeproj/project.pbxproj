@@ -11,9 +11,12 @@
 		92A6CEBE1BE88E5D0022BF31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A6CEBD1BE88E5D0022BF31 /* AppDelegate.swift */; };
 		92A6CEC31BE88E5D0022BF31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A6CEC11BE88E5D0022BF31 /* Main.storyboard */; };
 		92A6CEC51BE88E5D0022BF31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A6CEC41BE88E5D0022BF31 /* Assets.xcassets */; };
-		92A796191C05B5AD00E11F20 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A796181C05B5AD00E11F20 /* HomeViewController.swift */; };
-		92E024781C0591DC009E2BF4 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E024761C0591DC009E2BF4 /* HomePageViewController.swift */; };
-		92E024791C0591DC009E2BF4 /* MusicInfoPageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E024771C0591DC009E2BF4 /* MusicInfoPageContentViewController.swift */; };
+		92A7961F1C05F69100E11F20 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7961C1C05F69100E11F20 /* HomePageViewController.swift */; };
+		92A796201C05F69100E11F20 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7961D1C05F69100E11F20 /* HomeViewController.swift */; };
+		92A796211C05F69100E11F20 /* MusicInfoPageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7961E1C05F69100E11F20 /* MusicInfoPageContentViewController.swift */; };
+		92A796261C05FB1B00E11F20 /* ExampleDrawerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A796251C05FB1B00E11F20 /* ExampleDrawerManager.swift */; };
+		92A796281C05FD9E00E11F20 /* ChannelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A796271C05FD9E00E11F20 /* ChannelTableViewController.swift */; };
+		92A7962B1C0600F400E11F20 /* ChannelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7962A1C0600F400E11F20 /* ChannelTableViewCell.swift */; };
 		AF4CBD1A2B66636B9BAE45EB /* Pods_Miyu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0969D93F6324282F63913A8D /* Pods_Miyu.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,9 +29,12 @@
 		92A6CEC21BE88E5D0022BF31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92A6CEC41BE88E5D0022BF31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92A6CEC91BE88E5D0022BF31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		92A796181C05B5AD00E11F20 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		92E024761C0591DC009E2BF4 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
-		92E024771C0591DC009E2BF4 /* MusicInfoPageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicInfoPageContentViewController.swift; sourceTree = "<group>"; };
+		92A7961C1C05F69100E11F20 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		92A7961D1C05F69100E11F20 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		92A7961E1C05F69100E11F20 /* MusicInfoPageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicInfoPageContentViewController.swift; sourceTree = "<group>"; };
+		92A796251C05FB1B00E11F20 /* ExampleDrawerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDrawerManager.swift; sourceTree = "<group>"; };
+		92A796271C05FD9E00E11F20 /* ChannelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelTableViewController.swift; sourceTree = "<group>"; };
+		92A7962A1C0600F400E11F20 /* ChannelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelTableViewCell.swift; sourceTree = "<group>"; };
 		A88C2E3234073A5BE87A2EE7 /* Pods-Miyu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miyu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Miyu/Pods-Miyu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,16 +71,35 @@
 		92A6CEBC1BE88E5D0022BF31 /* Miyu */ = {
 			isa = PBXGroup;
 			children = (
+				92A796291C0600E500E11F20 /* View */,
+				92A7961B1C05F67400E11F20 /* ViewController */,
 				92A6CEBD1BE88E5D0022BF31 /* AppDelegate.swift */,
-				92A796181C05B5AD00E11F20 /* HomeViewController.swift */,
-				92E024761C0591DC009E2BF4 /* HomePageViewController.swift */,
-				92E024771C0591DC009E2BF4 /* MusicInfoPageContentViewController.swift */,
 				92A6CEC11BE88E5D0022BF31 /* Main.storyboard */,
 				92435CCA1C0486E100514A0F /* Launch Screen.storyboard */,
 				92A6CEC41BE88E5D0022BF31 /* Assets.xcassets */,
 				92A6CEC91BE88E5D0022BF31 /* Info.plist */,
+				92A796251C05FB1B00E11F20 /* ExampleDrawerManager.swift */,
 			);
 			path = Miyu;
+			sourceTree = "<group>";
+		};
+		92A7961B1C05F67400E11F20 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				92A7961C1C05F69100E11F20 /* HomePageViewController.swift */,
+				92A7961D1C05F69100E11F20 /* HomeViewController.swift */,
+				92A7961E1C05F69100E11F20 /* MusicInfoPageContentViewController.swift */,
+				92A796271C05FD9E00E11F20 /* ChannelTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		92A796291C0600E500E11F20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				92A7962A1C0600F400E11F20 /* ChannelTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		C39B1FA390A16DB1170DD98D /* Frameworks */ = {
@@ -192,7 +217,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/Fabric.framework/run\" 0ac5f73da9a52a6af1caa26aebbb7171573ac006 7e811416b5c910f8312e1bb2243cc2db65994a442f13d3a8324f22887223d6c5";
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 0ac5f73da9a52a6af1caa26aebbb7171573ac006 7e811416b5c910f8312e1bb2243cc2db65994a442f13d3a8324f22887223d6c5";
 		};
 		CDE461C292ABFDEF912F581B /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -231,10 +256,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92A796191C05B5AD00E11F20 /* HomeViewController.swift in Sources */,
+				92A7961F1C05F69100E11F20 /* HomePageViewController.swift in Sources */,
 				92A6CEBE1BE88E5D0022BF31 /* AppDelegate.swift in Sources */,
-				92E024781C0591DC009E2BF4 /* HomePageViewController.swift in Sources */,
-				92E024791C0591DC009E2BF4 /* MusicInfoPageContentViewController.swift in Sources */,
+				92A796281C05FD9E00E11F20 /* ChannelTableViewController.swift in Sources */,
+				92A7962B1C0600F400E11F20 /* ChannelTableViewCell.swift in Sources */,
+				92A796261C05FB1B00E11F20 /* ExampleDrawerManager.swift in Sources */,
+				92A796201C05F69100E11F20 /* HomeViewController.swift in Sources */,
+				92A796211C05F69100E11F20 /* MusicInfoPageContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +366,7 @@
 			baseConfigurationReference = 57F3028237C2B0EFE43B73DA /* Pods-Miyu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				INFOPLIST_FILE = Miyu/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = moe.Cee.Miyu;

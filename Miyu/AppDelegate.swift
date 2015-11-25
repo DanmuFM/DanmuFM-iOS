@@ -9,16 +9,18 @@
 import UIKit
 import Fabric
 import Crashlytics
+import DrawerController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var drawerController: DrawerController!
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         Fabric.with([Crashlytics.self])
+        setupDrawer()
         return true
     }
 
@@ -44,6 +46,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func setupDrawer() {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: nil)
+        let leftSideDrawerViewController = storyboard.instantiateViewControllerWithIdentifier("ChannelTableViewController")
+        let centerViewController = storyboard.instantiateViewControllerWithIdentifier("HomeViewController")
+        
+        self.drawerController = DrawerController(centerViewController: centerViewController, leftDrawerViewController: leftSideDrawerViewController, rightDrawerViewController: nil)
+        self.drawerController.showsShadows = false
+        self.drawerController.view.backgroundColor = UIColor.whiteColor()
+        self.drawerController.restorationIdentifier = "Drawer"
+        self.drawerController.maximumLeftDrawerWidth = 240
+        self.drawerController.openDrawerGestureModeMask = .All
+        self.drawerController.closeDrawerGestureModeMask = .All
+        
+        self.drawerController.drawerVisualStateBlock = { (drawerController, drawerSide, percentVisible) in
+            let block = ExampleDrawerVisualStateManager.sharedManager.drawerVisualStateBlockForDrawerSide(drawerSide)
+            block?(drawerController, drawerSide, percentVisible)
+        }
+        
+        self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        self.window?.rootViewController = self.drawerController
+    }
 
 }
 
