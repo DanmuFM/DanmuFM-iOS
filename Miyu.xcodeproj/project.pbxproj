@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		92435CCB1C0486E100514A0F /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92435CCA1C0486E100514A0F /* Launch Screen.storyboard */; };
 		92A6CEBE1BE88E5D0022BF31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A6CEBD1BE88E5D0022BF31 /* AppDelegate.swift */; };
-		92A6CEC01BE88E5D0022BF31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A6CEBF1BE88E5D0022BF31 /* ViewController.swift */; };
 		92A6CEC31BE88E5D0022BF31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92A6CEC11BE88E5D0022BF31 /* Main.storyboard */; };
 		92A6CEC51BE88E5D0022BF31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92A6CEC41BE88E5D0022BF31 /* Assets.xcassets */; };
+		92A796191C05B5AD00E11F20 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A796181C05B5AD00E11F20 /* HomeViewController.swift */; };
 		92E024781C0591DC009E2BF4 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E024761C0591DC009E2BF4 /* HomePageViewController.swift */; };
 		92E024791C0591DC009E2BF4 /* MusicInfoPageContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E024771C0591DC009E2BF4 /* MusicInfoPageContentViewController.swift */; };
 		AF4CBD1A2B66636B9BAE45EB /* Pods_Miyu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0969D93F6324282F63913A8D /* Pods_Miyu.framework */; };
@@ -23,10 +23,10 @@
 		92435CCA1C0486E100514A0F /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		92A6CEBA1BE88E5D0022BF31 /* Miyu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Miyu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92A6CEBD1BE88E5D0022BF31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		92A6CEBF1BE88E5D0022BF31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		92A6CEC21BE88E5D0022BF31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92A6CEC41BE88E5D0022BF31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92A6CEC91BE88E5D0022BF31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92A796181C05B5AD00E11F20 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		92E024761C0591DC009E2BF4 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		92E024771C0591DC009E2BF4 /* MusicInfoPageContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicInfoPageContentViewController.swift; sourceTree = "<group>"; };
 		A88C2E3234073A5BE87A2EE7 /* Pods-Miyu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miyu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Miyu/Pods-Miyu.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				92A6CEBD1BE88E5D0022BF31 /* AppDelegate.swift */,
-				92A6CEBF1BE88E5D0022BF31 /* ViewController.swift */,
+				92A796181C05B5AD00E11F20 /* HomeViewController.swift */,
 				92E024761C0591DC009E2BF4 /* HomePageViewController.swift */,
 				92E024771C0591DC009E2BF4 /* MusicInfoPageContentViewController.swift */,
 				92A6CEC11BE88E5D0022BF31 /* Main.storyboard */,
@@ -217,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92A6CEC01BE88E5D0022BF31 /* ViewController.swift in Sources */,
+				92A796191C05B5AD00E11F20 /* HomeViewController.swift in Sources */,
 				92A6CEBE1BE88E5D0022BF31 /* AppDelegate.swift in Sources */,
 				92E024781C0591DC009E2BF4 /* HomePageViewController.swift in Sources */,
 				92E024791C0591DC009E2BF4 /* MusicInfoPageContentViewController.swift in Sources */,
