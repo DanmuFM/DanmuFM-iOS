@@ -4,5 +4,7 @@ use_frameworks!
 
 target 'Miyu' do
 	pod 'Reveal-iOS-SDK', :configurations => ['Debug']
+    pod 'Fabric'
+    pod 'Crashlytics'
 end
 
