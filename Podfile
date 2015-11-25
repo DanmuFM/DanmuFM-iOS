@@ -6,5 +6,6 @@ target 'Miyu' do
 	pod 'Reveal-iOS-SDK', :configurations => ['Debug']
     pod 'Fabric'
     pod 'Crashlytics'
+    pod 'DrawerController'
 end
 

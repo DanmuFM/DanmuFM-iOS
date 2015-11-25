@@ -1,16 +1,24 @@
 PODS:
   - Crashlytics (3.4.1):
     - Fabric (~> 1.6.0)
+  - DrawerController (1.1.0):
+    - DrawerController/Core (= 1.1.0)
+    - DrawerController/DrawerVisualStates (= 1.1.0)
+  - DrawerController/Core (1.1.0)
+  - DrawerController/DrawerVisualStates (1.1.0):
+    - DrawerController/Core
   - Fabric (1.6.1)
   - Reveal-iOS-SDK (1.6.2)
 
 DEPENDENCIES:
   - Crashlytics
+  - DrawerController
   - Fabric
   - Reveal-iOS-SDK
 
 SPEC CHECKSUMS:
   Crashlytics: 41574a245bc6ae10c55d57f385ebd2004e5bee05
+  DrawerController: 8fd56e6238399a08c4af054fbea0ef8669cd81f3
   Fabric: bf0ceb04e7c924090efc5f8c55e4fbcca189e0a0
   Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
 
