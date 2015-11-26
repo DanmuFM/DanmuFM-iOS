@@ -58,7 +58,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.drawerController.maximumLeftDrawerWidth = 240
         self.drawerController.openDrawerGestureModeMask = .All
         self.drawerController.closeDrawerGestureModeMask = .All
-        
+        self.drawerController.shouldStretchDrawer = false
         self.drawerController.drawerVisualStateBlock = { (drawerController, drawerSide, percentVisible) in
             let block = ExampleDrawerVisualStateManager.sharedManager.drawerVisualStateBlockForDrawerSide(drawerSide)
             block?(drawerController, drawerSide, percentVisible)
