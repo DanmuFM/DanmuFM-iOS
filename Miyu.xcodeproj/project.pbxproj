@@ -17,6 +17,8 @@
 		92A796261C05FB1B00E11F20 /* ExampleDrawerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A796251C05FB1B00E11F20 /* ExampleDrawerManager.swift */; };
 		92A796281C05FD9E00E11F20 /* ChannelTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A796271C05FD9E00E11F20 /* ChannelTableViewController.swift */; };
 		92A7962B1C0600F400E11F20 /* ChannelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7962A1C0600F400E11F20 /* ChannelTableViewCell.swift */; };
+		92F9D3341C081CB500799A58 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F9D3331C081CB500799A58 /* SearchViewController.swift */; };
+		92F9D3361C0820F500799A58 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F9D3351C0820F500799A58 /* SearchTableViewCell.swift */; };
 		AF4CBD1A2B66636B9BAE45EB /* Pods_Miyu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0969D93F6324282F63913A8D /* Pods_Miyu.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		92A796251C05FB1B00E11F20 /* ExampleDrawerManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleDrawerManager.swift; sourceTree = "<group>"; };
 		92A796271C05FD9E00E11F20 /* ChannelTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelTableViewController.swift; sourceTree = "<group>"; };
 		92A7962A1C0600F400E11F20 /* ChannelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelTableViewCell.swift; sourceTree = "<group>"; };
+		92F9D3331C081CB500799A58 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		92F9D3351C0820F500799A58 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		A88C2E3234073A5BE87A2EE7 /* Pods-Miyu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miyu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Miyu/Pods-Miyu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -90,6 +94,7 @@
 				92A7961D1C05F69100E11F20 /* HomeViewController.swift */,
 				92A7961E1C05F69100E11F20 /* MusicInfoPageContentViewController.swift */,
 				92A796271C05FD9E00E11F20 /* ChannelTableViewController.swift */,
+				92F9D3331C081CB500799A58 /* SearchViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -98,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				92A7962A1C0600F400E11F20 /* ChannelTableViewCell.swift */,
+				92F9D3351C0820F500799A58 /* SearchTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -256,8 +262,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92F9D3361C0820F500799A58 /* SearchTableViewCell.swift in Sources */,
 				92A7961F1C05F69100E11F20 /* HomePageViewController.swift in Sources */,
 				92A6CEBE1BE88E5D0022BF31 /* AppDelegate.swift in Sources */,
+				92F9D3341C081CB500799A58 /* SearchViewController.swift in Sources */,
 				92A796281C05FD9E00E11F20 /* ChannelTableViewController.swift in Sources */,
 				92A7962B1C0600F400E11F20 /* ChannelTableViewCell.swift in Sources */,
 				92A796261C05FB1B00E11F20 /* ExampleDrawerManager.swift in Sources */,
