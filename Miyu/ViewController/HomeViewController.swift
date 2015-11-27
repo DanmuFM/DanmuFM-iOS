@@ -23,8 +23,8 @@ class HomeViewController: UIViewController {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        let offsetX = textField.frame.origin.x
-        let offsetY = textField.frame.origin.y
+        let offsetX: CGFloat = 0
+        let offsetY: CGFloat = 0
         let width = textField.frame.size.width
         let height = textField.frame.size.height
         
@@ -64,16 +64,12 @@ class HomeViewController: UIViewController {
         layer.lineWidth = 1
         layer.path = path.CGPath
         layer.frame = view.frame
-        view.layer.addSublayer(layer)
+        textField.layer.mask = layer
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: Button Pressed Actions
+    
+    @IBAction func channelButtonPressed(sender: AnyObject) {
+        self.evo_drawerController?.toggleDrawerSide(.Left, animated: true, completion: nil)
     }
-    */
-
 }
