@@ -59,10 +59,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.drawerController.openDrawerGestureModeMask = .All
         self.drawerController.closeDrawerGestureModeMask = .All
         self.drawerController.shouldStretchDrawer = false
-        self.drawerController.drawerVisualStateBlock = { (drawerController, drawerSide, percentVisible) in
+        
+        let blurView = UIView(frame: UIScreen.mainScreen().bounds)
+        blurView.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0.7)
+        
+        self.drawerController.drawerVisualStateBlock = { (drawer, drawerSide, percentVisible) in
+            if percentVisible > 0 && blurView.superview == nil {
+                self.drawerController.centerViewController?.view.addSubview(blurView)
+            }
+            if percentVisible == 0 {
+                blurView.removeFromSuperview()
+            }
             let block = ExampleDrawerVisualStateManager.sharedManager.drawerVisualStateBlockForDrawerSide(drawerSide)
-            block?(drawerController, drawerSide, percentVisible)
+            block?(self.drawerController, drawerSide, percentVisible)
         }
+        
+//        self.drawerController.drawerVisualStateBlock = { (drawerController, drawerSide, percentVisible) in
+//            let block = ExampleDrawerVisualStateManager.sharedManager.drawerVisualStateBlockForDrawerSide(drawerSide)
+//            block?(drawerController, drawerSide, percentVisible)
+//        }
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         

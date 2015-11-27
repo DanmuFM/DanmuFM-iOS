@@ -73,6 +73,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="40"/>
                                         <animations/>
                                         <state key="normal" image="group"/>
+                                        <connections>
+                                            <action selector="channelButtonPressed:" destination="tjK-Y2-cf6" eventType="touchUpInside" id="x6Z-6W-fXJ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNO-k0-1QX">
                                         <rect key="frame" x="120" y="0.0" width="120" height="40"/>
