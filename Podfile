@@ -7,5 +7,6 @@ target 'Miyu' do
     pod 'Fabric'
     pod 'Crashlytics'
     pod 'DrawerController'
+    pod 'Alamofire'
 end
 

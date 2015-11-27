@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (3.1.3)
   - Crashlytics (3.4.1):
     - Fabric (~> 1.6.0)
   - DrawerController (1.1.0):
@@ -11,12 +12,14 @@ PODS:
   - Reveal-iOS-SDK (1.6.2)
 
 DEPENDENCIES:
+  - Alamofire
   - Crashlytics
   - DrawerController
   - Fabric
   - Reveal-iOS-SDK
 
 SPEC CHECKSUMS:
+  Alamofire: 9f93b56389e48def9220dd57d1f44b1927229a5a
   Crashlytics: 41574a245bc6ae10c55d57f385ebd2004e5bee05
   DrawerController: 8fd56e6238399a08c4af054fbea0ef8669cd81f3
   Fabric: bf0ceb04e7c924090efc5f8c55e4fbcca189e0a0
