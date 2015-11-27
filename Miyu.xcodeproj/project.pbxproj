@@ -75,6 +75,7 @@
 		92A6CEBC1BE88E5D0022BF31 /* Miyu */ = {
 			isa = PBXGroup;
 			children = (
+				92F9D3381C083B6A00799A58 /* API */,
 				92A796291C0600E500E11F20 /* View */,
 				92A7961B1C05F67400E11F20 /* ViewController */,
 				92A6CEBD1BE88E5D0022BF31 /* AppDelegate.swift */,
@@ -106,6 +107,13 @@
 				92F9D3351C0820F500799A58 /* SearchTableViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		92F9D3381C083B6A00799A58 /* API */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		C39B1FA390A16DB1170DD98D /* Frameworks */ = {
