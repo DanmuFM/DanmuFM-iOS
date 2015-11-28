@@ -96,6 +96,9 @@
                                         <rect key="frame" x="480" y="0.0" width="120" height="40"/>
                                         <animations/>
                                         <state key="normal" image="share"/>
+                                        <connections>
+                                            <action selector="shareButtonPressed:" destination="tjK-Y2-cf6" eventType="touchUpInside" id="s9k-bV-RBG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <animations/>
@@ -224,10 +227,10 @@
                                 <exclude reference="ux7-HY-6oO"/>
                                 <exclude reference="jNK-mx-qUc"/>
                                 <exclude reference="ooM-G2-T7C"/>
-                                <exclude reference="R2p-Kb-8Ij"/>
-                                <exclude reference="a0x-ql-yqG"/>
                                 <exclude reference="Nqh-IB-9aJ"/>
                                 <exclude reference="PMQ-Ss-VgC"/>
+                                <exclude reference="R2p-Kb-8Ij"/>
+                                <exclude reference="a0x-ql-yqG"/>
                                 <exclude reference="NyW-fN-Aai"/>
                                 <exclude reference="FCp-3L-5EM"/>
                                 <exclude reference="eIE-Wj-OUd"/>
@@ -374,7 +377,7 @@
         <!--Music Info Page Content View Controller-->
         <scene sceneID="9Vc-g7-K87">
             <objects>
-                <viewController storyboardIdentifier="page1" id="woz-ED-aTx" customClass="MusicInfoPageContentViewController" customModule="Miyu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MusicInfoPageContentViewController" id="woz-ED-aTx" customClass="MusicInfoPageContentViewController" customModule="Miyu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="odv-r9-gGb"/>
                         <viewControllerLayoutGuide type="bottom" id="oye-SQ-OPA"/>
@@ -449,6 +452,146 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RD2-hG-3gD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1107" y="330"/>
+        </scene>
+        <!--Music Lyric View Controller-->
+        <scene sceneID="fjT-cz-kCu">
+            <objects>
+                <viewController storyboardIdentifier="MusicLyricViewController" id="pwV-Zf-2AX" customClass="MusicLyricViewController" customModule="Miyu" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Nq-OA-bVV"/>
+                        <viewControllerLayoutGuide type="bottom" id="3eK-tk-7Xn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yWq-3r-bZJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NEn-pC-Pbn">
+                                <rect key="frame" x="0.0" y="-0.5" width="600" height="600"/>
+                                <animations/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">どんな願いも　嘘じゃない
+窓の外の陽だまりに咲く
+風にそよぐ太陽の薫り
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.70588235294117652" green="0.70588235294117652" blue="0.70588235294117652" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="HiraKakuProN-W3"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="36" maximumLineHeight="36" lineHeightMultiple="2" tighteningFactorForTruncation="0.0">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="触れた指が届けてくれる">
+                                        <attributes>
+                                            <color key="NSColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="HiraKakuProN-W3"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="72" maximumLineHeight="72" lineHeightMultiple="4" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.10196078431372549" green="0.10196078431372549" blue="0.10196078431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="24" name="HiraKakuProN-W3"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="72" maximumLineHeight="72" lineHeightMultiple="4" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">世界中を照らすドキドキ
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.71764705882352942" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="HiraKakuProN-W3"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="36" maximumLineHeight="36" lineHeightMultiple="3" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">今溢れるキミはメロディ
+</string>
+                                        <attributes>
+                                            <color key="NSColor" red="0.71764705882352942" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="HiraKakuProN-W3"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="36" maximumLineHeight="36" lineHeightMultiple="2" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="逃げたりあきらめるコトは">
+                                        <attributes>
+                                            <color key="NSColor" red="0.71764705882352942" green="0.71764705882352942" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="18" name="HiraKakuProN-W3"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" minimumLineHeight="36" maximumLineHeight="36" lineHeightMultiple="3" tighteningFactorForTruncation="0.0">
+                                                <tabStops>
+                                                    <textTab alignment="left" location="11">
+                                                        <options/>
+                                                    </textTab>
+                                                    <textTab alignment="natural" location="36">
+                                                        <options/>
+                                                    </textTab>
+                                                </tabStops>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="NEn-pC-Pbn" firstAttribute="width" secondItem="yWq-3r-bZJ" secondAttribute="width" id="3yS-ZZ-4Lr"/>
+                            <constraint firstItem="NEn-pC-Pbn" firstAttribute="centerY" secondItem="yWq-3r-bZJ" secondAttribute="centerY" id="S1w-tp-P3e"/>
+                            <constraint firstItem="NEn-pC-Pbn" firstAttribute="centerX" secondItem="yWq-3r-bZJ" secondAttribute="centerX" id="YYE-k9-GCL"/>
+                            <constraint firstItem="NEn-pC-Pbn" firstAttribute="height" secondItem="yWq-3r-bZJ" secondAttribute="height" id="ZWN-hM-rY4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RGC-fd-e2O" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1772" y="1198"/>
         </scene>
     </scenes>
     <resources>

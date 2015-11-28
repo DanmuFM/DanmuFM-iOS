@@ -68,8 +68,18 @@ class HomeViewController: UIViewController {
     }
     
     // MARK: Button Pressed Actions
-    
     @IBAction func channelButtonPressed(sender: AnyObject) {
         self.evo_drawerController?.toggleDrawerSide(.Left, animated: true, completion: nil)
+    }
+    
+    @IBAction func shareButtonPressed(sender: AnyObject) {
+        let alertController = UIAlertController(title: nil, message: nil, preferredStyle:.ActionSheet)
+        alertController.addAction(UIAlertAction(title: "举报", style: .Destructive, handler: nil))
+        alertController.addAction(UIAlertAction(title: "浏览器打开", style: .Default, handler: nil))
+        alertController.addAction(UIAlertAction(title: "复制链接", style: .Default, handler: nil))
+        alertController.addAction(UIAlertAction(title: "分享到微博", style: .Default, handler: nil))
+        alertController.addAction(UIAlertAction(title: "添加到收藏夹", style: .Default, handler: nil))
+        alertController.addAction(UIAlertAction(title: "取消", style: .Cancel, handler: nil))
+        self.presentViewController(alertController, animated: true, completion: nil)
     }
 }

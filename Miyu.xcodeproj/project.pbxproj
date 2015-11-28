@@ -19,6 +19,8 @@
 		92A7962B1C0600F400E11F20 /* ChannelTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92A7962A1C0600F400E11F20 /* ChannelTableViewCell.swift */; };
 		92F9D3341C081CB500799A58 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F9D3331C081CB500799A58 /* SearchViewController.swift */; };
 		92F9D3361C0820F500799A58 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F9D3351C0820F500799A58 /* SearchTableViewCell.swift */; };
+		92F9D37D1C09E15200799A58 /* UIColor+HexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F9D37C1C09E15200799A58 /* UIColor+HexString.swift */; };
+		92F9D37F1C09E43200799A58 /* MusicLyricViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F9D37E1C09E43200799A58 /* MusicLyricViewController.swift */; };
 		AF4CBD1A2B66636B9BAE45EB /* Pods_Miyu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0969D93F6324282F63913A8D /* Pods_Miyu.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 		92A7962A1C0600F400E11F20 /* ChannelTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelTableViewCell.swift; sourceTree = "<group>"; };
 		92F9D3331C081CB500799A58 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		92F9D3351C0820F500799A58 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		92F9D37C1C09E15200799A58 /* UIColor+HexString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HexString.swift"; sourceTree = "<group>"; };
+		92F9D37E1C09E43200799A58 /* MusicLyricViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicLyricViewController.swift; sourceTree = "<group>"; };
 		A88C2E3234073A5BE87A2EE7 /* Pods-Miyu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Miyu.release.xcconfig"; path = "Pods/Target Support Files/Pods-Miyu/Pods-Miyu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				92F9D3381C083B6A00799A58 /* API */,
+				92F9D3771C09DF7D00799A58 /* Extensions */,
 				92A796291C0600E500E11F20 /* View */,
 				92A7961B1C05F67400E11F20 /* ViewController */,
 				92A6CEBD1BE88E5D0022BF31 /* AppDelegate.swift */,
@@ -91,9 +96,7 @@
 		92A7961B1C05F67400E11F20 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				92A7961C1C05F69100E11F20 /* HomePageViewController.swift */,
-				92A7961D1C05F69100E11F20 /* HomeViewController.swift */,
-				92A7961E1C05F69100E11F20 /* MusicInfoPageContentViewController.swift */,
+				92F9D3801C09E4C500799A58 /* Home */,
 				92A796271C05FD9E00E11F20 /* ChannelTableViewController.swift */,
 				92F9D3331C081CB500799A58 /* SearchViewController.swift */,
 			);
@@ -114,6 +117,25 @@
 			children = (
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		92F9D3771C09DF7D00799A58 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				92F9D37C1C09E15200799A58 /* UIColor+HexString.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		92F9D3801C09E4C500799A58 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				92A7961D1C05F69100E11F20 /* HomeViewController.swift */,
+				92A7961C1C05F69100E11F20 /* HomePageViewController.swift */,
+				92A7961E1C05F69100E11F20 /* MusicInfoPageContentViewController.swift */,
+				92F9D37E1C09E43200799A58 /* MusicLyricViewController.swift */,
+			);
+			name = Home;
 			sourceTree = "<group>";
 		};
 		C39B1FA390A16DB1170DD98D /* Frameworks */ = {
@@ -273,11 +295,13 @@
 				92F9D3361C0820F500799A58 /* SearchTableViewCell.swift in Sources */,
 				92A7961F1C05F69100E11F20 /* HomePageViewController.swift in Sources */,
 				92A6CEBE1BE88E5D0022BF31 /* AppDelegate.swift in Sources */,
+				92F9D37F1C09E43200799A58 /* MusicLyricViewController.swift in Sources */,
 				92F9D3341C081CB500799A58 /* SearchViewController.swift in Sources */,
 				92A796281C05FD9E00E11F20 /* ChannelTableViewController.swift in Sources */,
 				92A7962B1C0600F400E11F20 /* ChannelTableViewCell.swift in Sources */,
 				92A796261C05FB1B00E11F20 /* ExampleDrawerManager.swift in Sources */,
 				92A796201C05F69100E11F20 /* HomeViewController.swift in Sources */,
+				92F9D37D1C09E15200799A58 /* UIColor+HexString.swift in Sources */,
 				92A796211C05F69100E11F20 /* MusicInfoPageContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

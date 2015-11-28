@@ -18,8 +18,8 @@ class HomePageViewController: UIPageViewController {
         self.delegate = self
         self.dataSource = self
         
-        let page1: UIViewController! = storyboard?.instantiateViewControllerWithIdentifier("page1")
-        let page2: UIViewController! = storyboard?.instantiateViewControllerWithIdentifier("page1")
+        let page1: UIViewController! = storyboard?.instantiateViewControllerWithIdentifier("MusicInfoPageContentViewController")
+        let page2: UIViewController! = storyboard?.instantiateViewControllerWithIdentifier("MusicLyricViewController")
         
         pages.append(page1)
         pages.append(page2)
