@@ -40,14 +40,14 @@ class HomePageViewController: UIPageViewController {
 extension HomePageViewController: UIPageViewControllerDataSource {
     func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController? {
         let currentIndex = pages.indexOf(viewController)!
-        let previousIndex = abs((currentIndex - 1) % pages.count)
-        return pages[previousIndex]
+        let index = (currentIndex - 1) % pages.count
+        return index < 0 ? nil : pages[index]
     }
     
     func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController? {
         let currentIndex = pages.indexOf(viewController)!
-        let nextIndex = abs((currentIndex + 1) % pages.count)
-        return pages[nextIndex]
+        let index = (currentIndex + 1) % pages.count
+        return index == 0 ? nil : pages[index]
     }
 }
 
