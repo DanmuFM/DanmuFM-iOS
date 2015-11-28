@@ -10,7 +10,7 @@ import UIKit
 
 class HomeViewController: UIViewController {
 
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var danmakuButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -25,8 +25,8 @@ class HomeViewController: UIViewController {
         super.viewDidLayoutSubviews()
         let offsetX: CGFloat = 0
         let offsetY: CGFloat = 0
-        let width = textField.frame.size.width
-        let height = textField.frame.size.height
+        let width = danmakuButton.frame.size.width
+        let height = danmakuButton.frame.size.height
         
         let path = UIBezierPath()
         path.lineWidth = 5.0
@@ -64,7 +64,7 @@ class HomeViewController: UIViewController {
         layer.lineWidth = 1
         layer.path = path.CGPath
         layer.frame = view.frame
-        textField.layer.mask = layer
+        danmakuButton.layer.mask = layer
     }
     
     // MARK: Button Pressed Actions
